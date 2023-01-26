@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="num1" id="num1"> + 
+    <input type="number" name="num2" id="num2">
+    <input type="button" value="enviar" onclick="enviar()">
+    <div id="res"></div>
+    <script>
+        function enviar(){
+            var nt1 = document.getElementById("num1")
+            var nt2 = document.querySelector("input#num2")
+            var resdiv = document.querySelector("div#res")
+            var n1 = Number(nt1.value) 
+            var n2 = Number(nt2.value)
+            var res = n1 + n2
+            resdiv.innerHTML = `= ${res}`
+        }
+    </script>
+</body>
+</html>

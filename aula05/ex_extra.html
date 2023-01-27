@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais de origem</title>
+</head>
+<body>
+    <h1>Digite seu país</h1>
+
+    <input type="text" name="countrytxt" id="countrytxt">
+    <input type="button" value="Confirmar" onclick="verificar()">
+    <br>
+    <div id="result"></div>
+
+    <script>
+        function verificar(){
+            var countrytxt = document.querySelector("input#countrytxt")
+            var result = document.querySelector("div#result")
+            //se não fizer o codigo abaixo nao pega a string digitada, sempre add .value
+            var country = countrytxt.value
+
+            if (country == "Brasil" || country == "brasil" || country == "bostil"){
+                result.innerHTML = `Você é do <b>Brasil</b>`
+            }else
+                result.innerHTML = `Você é de outro lugar`
+        }
+    </script>
+</body>
+</html>

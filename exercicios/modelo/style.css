@@ -1,0 +1,27 @@
+body{
+    background-color:rgb(107, 107, 107) ;
+    font: normal 20pt helvetica;
+}
+header{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+section{
+    background-color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.644);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px ;
+}
